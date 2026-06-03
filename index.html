@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Пространство красоты Анастасии Тучинской | Тула</title>
+  <meta name="description" content="Анастасия Тучинская, косметолог в Туле. Персональное beauty-пространство: уход за лицом и телом с индивидуальным подбором, без давления и лишних процедур." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <a href="#top" class="brand" aria-label="На главную">
+      <span class="brand__mark">AT</span>
+      <span class="brand__text">Анастасия Тучинская</span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="siteNav">
+      <span></span><span></span>
+    </button>
+
+    <nav class="site-nav" id="siteNav" aria-label="Главное меню">
+      <a href="#states">Состояния</a>
+      <a href="#directions">Направления</a>
+      <a href="#approach">Подход</a>
+      <a href="#visit">Первый визит</a>
+      <a href="#results">Результаты</a>
+      <a href="#about">Обо мне</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contacts">Запись</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-dark">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="hero__content container">
+        <div class="hero__text reveal">
+          <p class="eyebrow eyebrow--line">Персональное beauty-пространство · Тула</p>
+          <h1>Пространство красоты для лица и тела</h1>
+          <p class="lead">Уходовые и эстетические процедуры, которые подбираются не по моде, а по состоянию кожи, тела и вашему личному запросу.</p>
+          <p class="hero__accent">Красоту не навязывают. Её собирают — спокойно, бережно и поэтапно.</p>
+          <div class="hero__actions">
+            <a class="btn btn-primary" href="https://vk.com/id483766579" target="_blank" rel="noreferrer">Записаться</a>
+            <a class="btn btn-secondary" href="#directions">Посмотреть направления</a>
+          </div>
+          <ul class="hero__features" aria-label="Преимущества">
+            <li>Лицо и тело</li>
+            <li>Индивидуальный подбор</li>
+            <li>Уход без перегруза</li>
+            <li>Рекомендации после визита</li>
+          </ul>
+        </div>
+        <div class="hero__visual reveal">
+          <div class="photo-frame photo-frame--hero">
+            <div class="photo-card photo-card--main">
+              <img class="hero__portrait" src="./images/anastasia-portrait.png" alt="Анастасия Тучинская в beauty-пространстве" width="1200" height="1500" />
+            </div>
+          </div>
+          <p class="hero__note">Создаю красоту</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="states">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow eyebrow--line">Не проблемы, а состояния</p>
+          <h2>Когда хочется снова нравиться себе в зеркале</h2>
+        </div>
+        <div class="state-grid" id="statesGrid"></div>
+        <p class="section-note reveal">Первый шаг — не выбрать процедуру из списка. Первый шаг — понять, что сейчас происходит с кожей, лицом или телом, и какой уход будет уместен именно сейчас.</p>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="directions">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow eyebrow--line">Направления работы</p>
+          <h2>Уход без перегруза</h2>
+          <p class="lead">Направления, из которых собирается ваш уход — по состоянию, а не по списку услуг.</p>
+        </div>
+        <div class="direction-grid" id="directionsGrid"></div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="approach">
+      <div class="container split">
+        <div class="reveal">
+          <p class="eyebrow eyebrow--line">Подход</p>
+          <h2>Сначала смотрим на вас. Потом выбираем процедуру</h2>
+          <p class="lead">В уходе за лицом и телом важна не скорость, а точность. Одна и та же процедура может быть уместной для одного человека и лишней для другого.</p>
+          <p>Работа начинается с разговора, оценки состояния кожи или тела и понимания того, какой результат для вас действительно будет комфортным.</p>
+        </div>
+        <div class="principles" id="principlesList"></div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="visit">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow eyebrow--line">Первый визит</p>
+          <h2>Первый визит — это не экзамен и не обязательство на курс</h2>
+        </div>
+        <div class="steps" id="visitSteps"></div>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="results">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow eyebrow--line">Результаты</p>
+          <h2>Результаты, которые видны без лишних слов</h2>
+          <p>Здесь размещаются реальные примеры работы: лицо, тело, качество кожи, визуальные изменения после процедуры или курса.</p>
+        </div>
+        <div class="case-grid" id="casesGrid"></div>
+        <p class="legal-note reveal">Результат индивидуален и зависит от исходного состояния кожи или тела, образа жизни, регулярности ухода и соблюдения рекомендаций. Есть противопоказания, перед процедурой нужна консультация специалиста.</p>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="about">
+      <div class="container about">
+        <div class="about__image reveal">
+          <div class="photo-frame photo-frame--about">
+            <img src="./images/anastasia-portrait.png" alt="Анастасия Тучинская, косметолог в Туле" width="1000" height="1250" />
+          </div>
+        </div>
+        <div class="about__text reveal">
+          <p class="eyebrow eyebrow--line">Об Анастасии</p>
+          <h2>Красота начинается с внимательного взгляда</h2>
+          <p>В моей работе важно не просто выполнить процедуру, а увидеть человека: как меняется лицо, как тело реагирует на стресс, как клиент чувствует себя в зеркале.</p>
+          <p>Я за уход, который не спорит с внешностью, а помогает ей раскрыться мягче, чище и увереннее.</p>
+          <div class="about__facts">
+            <span>Тула</span>
+            <span>Лицо и тело</span>
+            <span>Индивидуальный подбор</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="reviews">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow eyebrow--line">Отзывы</p>
+          <h2>После процедуры важно не только зеркало, но и ощущение себя</h2>
+        </div>
+        <div class="review-grid" id="reviewsGrid"></div>
+      </div>
+    </section>
+
+    <section class="section section-dark section--tight" id="faq">
+      <div class="container narrow">
+        <div class="section-head reveal">
+          <p class="eyebrow eyebrow--line">FAQ</p>
+          <h2>Вопросы, которые лучше задать до процедуры</h2>
+        </div>
+        <div class="faq" id="faqList"></div>
+      </div>
+    </section>
+
+    <section class="section section-muted section--tight" id="contacts">
+      <div class="container contact-card reveal">
+        <div>
+          <p class="eyebrow eyebrow--line">Контакты и запись</p>
+          <h2>Начните с сообщения</h2>
+          <p>Напишите, что хотите изменить или какой уход ищете. Не обязательно знать название процедуры — достаточно описать, что вас беспокоит.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="https://vk.com/id483766579" target="_blank" rel="noreferrer">Написать в VK</a>
+          <a class="btn btn-secondary" href="https://vk.com/club188474731" target="_blank" rel="noreferrer">VK-сообщество</a>
+          <a class="btn btn-secondary disabled" href="#" aria-disabled="true">Telegram добавить позже</a>
+          <a class="btn btn-secondary disabled" href="#" aria-disabled="true">Маршрут добавить позже</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© Пространство красоты Анастасии Тучинской · Тула</span>
+      <a href="#top">Наверх</a>
+    </div>
+  </footer>
+
+  <div class="modal" id="caseModal" aria-hidden="true">
+    <div class="modal__body" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" type="button" aria-label="Закрыть">×</button>
+      <div class="modal__gallery" id="modalGallery" hidden></div>
+      <img class="modal__image" src="" alt="" />
+      <h3 class="modal__title" id="modalTitle"></h3>
+      <p class="modal__text"></p>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
