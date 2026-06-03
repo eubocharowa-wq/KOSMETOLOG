@@ -215,20 +215,32 @@ const renderContent = () => {
 const initMobileNav = () => {
   const menuToggle = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.site-nav');
+  const overlay = document.getElementById('navOverlay');
   if (!menuToggle || !nav) return;
 
-  menuToggle.addEventListener('click', () => {
-    const isOpen = nav.classList.toggle('is-open');
+  const setMenuOpen = (isOpen) => {
+    nav.classList.toggle('is-open', isOpen);
+    document.body.classList.toggle('is-menu-open', isOpen);
     menuToggle.setAttribute('aria-expanded', String(isOpen));
     menuToggle.setAttribute('aria-label', isOpen ? 'Закрыть меню' : 'Открыть меню');
+    if (overlay) {
+      overlay.hidden = !isOpen;
+      overlay.setAttribute('aria-hidden', String(!isOpen));
+    }
+  };
+
+  menuToggle.addEventListener('click', () => {
+    setMenuOpen(!nav.classList.contains('is-open'));
   });
 
+  overlay?.addEventListener('click', () => setMenuOpen(false));
+
   nav.querySelectorAll('a').forEach((link) => {
-    link.addEventListener('click', () => {
-      nav.classList.remove('is-open');
-      menuToggle.setAttribute('aria-expanded', 'false');
-      menuToggle.setAttribute('aria-label', 'Открыть меню');
-    });
+    link.addEventListener('click', () => setMenuOpen(false));
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && nav.classList.contains('is-open')) setMenuOpen(false);
   });
 };
 
